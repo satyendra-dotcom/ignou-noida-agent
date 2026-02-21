@@ -9,7 +9,7 @@ except:
     st.error("API Key not found! Please add it to Streamlit Secrets.")
 
 model = genai.GenerativeModel(
-    model_name="gemini-1.5-flash",
+    model_name="gemini-2.5-flash",
     system_instruction=(
         "You are the IGNOU RC Noida Assistant. Be helpful and polite. "
         "Your main job is to help students find status links for RC Noida (Code 39). "
