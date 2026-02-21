@@ -4,7 +4,7 @@ import google.generativeai as genai
 # --- 1. AI SETUP ---
 # This line tells the app to look for your secret key in the Streamlit settings
 try:
-    genai.configure(api_key=st.secrets["AIzaSyBr75_a0ccSYiKxlALKE0fYPOrMEHuqvJI"])
+    genai.configure(api_key=st.secrets["GEMINI_API_KEY"])
 except:
     st.error("API Key not found! Please add it to Streamlit Secrets.")
 
